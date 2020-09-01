@@ -9,7 +9,7 @@
               <p><small class="text-muted text-uppercase">{{story.category}} | {{story.date}}</small></p>
               <h4><strong>{{story.title}}</strong></h4>
               <p class="text-muted">{{story.subtitle}}</p>
-              <b-link to="stories/1" class="stretched-link"></b-link>
+              <b-link :to="{ name: 'StoryView', params: { id: story.id } }" class="stretched-link"></b-link>
             </b-card-text>
           </b-card>  
         </div>
