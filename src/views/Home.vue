@@ -1,5 +1,5 @@
 <template>
-  <b-container-fluid>
+  <div id="home">
     <!-- Header Story -->
     <section class="header p-5">
         <b-card style="border: none; max-width: 30rem;" class="card m-4">
@@ -33,7 +33,7 @@
       <hr>
     </div>
 
-  </b-container-fluid>
+  </div>
 </template>
 
 <script>
