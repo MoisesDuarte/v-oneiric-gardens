@@ -26,6 +26,11 @@ export default new VueRouter({
             path: '/stories/:id',
             name: 'Story View',
             component: () => import('./views/StoryView.vue')
-        }
+        },
+        {
+            path: '/about',
+            name: 'About',
+            component: () => import('./views/About.vue')
+        },
     ]
 })
