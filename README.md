@@ -1,5 +1,8 @@
 # v-oneiric-gardens
 
+## Description 
+Update of the HTML5 narrative blog template using Vue and BootstrapVue component library.
+
 ## Project setup
 ```
 npm install
