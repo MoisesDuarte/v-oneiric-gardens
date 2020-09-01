@@ -2,11 +2,12 @@
   <b-container-fluid>
     <!-- Header Story -->
     <section class="header p-5">
-        <b-card style="border: none; max-width: 30rem;" class="straight-border m-4">
+        <b-card style="border: none; max-width: 30rem;" class="card m-4">
           <b-card-text>
             <p><small class="text-muted text-uppercase">{{stories[0].category}} | {{stories[0].date}}</small></p>
             <h2><strong>{{stories[0].title}}</strong></h2>
             <p class="text-muted">{{stories[0].subtitle}}</p>
+            <b-link to="stories/1" class="stretched-link"></b-link>
           </b-card-text>
         </b-card>
     </section>
@@ -15,11 +16,12 @@
     <b-container>
       <h1 class="text-center font-weight-light my-5">Recent Stories</h1>
       <b-card-group deck>
-        <b-card v-for="story in stories" :key="story.id" :img-src="story.image" img-top class="straight-border mb-4">
+        <b-card v-for="story in stories" :key="story.id" :img-src="story.image" img-top class="card mb-4">
           <b-card-text class="text-center">
             <p><small class="text-muted text-uppercase">{{story.category}} | {{story.date}}</small></p>
             <h4><strong>{{story.title}}</strong></h4>
             <p class="text-muted">{{story.subtitle}}</p>
+            <b-link to="stories/1" class="stretched-link"></b-link>
           </b-card-text>
         </b-card>
       </b-card-group>
@@ -76,7 +78,7 @@ export default {
   background-size: cover;
 }
 
-.straight-border {
+.card {
   border-radius: 0;
 }
 
