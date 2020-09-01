@@ -2,9 +2,8 @@
   <div id="stories">
       <b-container>
         <h1 class="text-center font-weight-light my-5">All Stories</h1>
-
         <div class="my-grid">
-            <b-card v-for="story in stories" :key="story.id" :img-src="story.image" cols="4" img-top class="card mb-4">
+            <b-card v-for="story in stories" :key="story.title" :img-src="story.image" cols="4" img-top class="card mb-4">
             <b-card-text class="text-center">
               <p><small class="text-muted text-uppercase">{{story.category}} | {{story.date}}</small></p>
               <h4><strong>{{story.title}}</strong></h4>
@@ -13,7 +12,13 @@
             </b-card-text>
           </b-card>  
         </div>
-      </b-container>
+
+         <div class="mt-3">
+          <b-pagination v-model="currentPage" pills :total-rows="rows" size="lg" align="center"></b-pagination>
+        </div>
+
+
+    </b-container>
   </div>
 </template>
 
@@ -70,7 +75,9 @@ export default {
           category: 'Article',
           date: '6 Days Ago'
         },
-      ]
+      ],
+      rows: 100,
+      currentPage: 1
     }
   }
 }
