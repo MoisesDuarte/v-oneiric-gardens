@@ -11,8 +11,8 @@
             <b-col md="9">
               <b-card-body>
                 <b-card-text>
-                  <h2 class="display-5 text-uppercase">{{category.name}}</h2>
-                  <h3 class="text-muted">{{category.subtitle}}</h3>
+                  <h2 class="text-uppercase">{{category.name}}</h2>
+                  <h4 class="text-muted">{{category.subtitle}}</h4>
                   <hr>
                   <h4>{{category.description}}</h4>
                 </b-card-text>

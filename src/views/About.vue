@@ -1,6 +1,8 @@
 <template>
   <div id="about">
-      <h1>About</h1>
+      <section class="header">
+        
+      </section>
   </div>
 </template>
 
@@ -11,5 +13,10 @@ export default {
 </script>
 
 <style>
-
+.header {
+  background-image: url('https://picsum.photos/1024/768?grayscale');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
 </style>
