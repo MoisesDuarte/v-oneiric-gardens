@@ -2,24 +2,24 @@
   <div id="categories">
       <b-container>
         <h1 class="text-center font-weight-light my-5">All Categories</h1>
-        
-        <b-card v-for="category in categories" :key="category.name" no-body class="overflow-hidden my-4">
+
+        <b-card v-for="{ name, image, subtitle, description } in categories" :key="name" no-body class="overflow-hidden my-4">
           <b-row no-gutters>
             <b-col md="3">
-              <b-card-img :src="category.image" alt="Image" class="rounded-0"></b-card-img>
+              <b-card-img-lazy :src="image" alt="Image" class="rounded-0"></b-card-img-lazy>
             </b-col>
             <b-col md="9">
-              <b-card-body>
+              <b-card-body :title="name">
                 <b-card-text>
-                  <h2 class="text-uppercase">{{category.name}}</h2>
-                  <h3 class="text-muted">{{category.subtitle}}</h3>
+                  <h5 class="text-muted">{{ subtitle }}</h5>
                   <hr>
-                  <h5>{{category.description}}</h5>
+                  <h5>{{ description }}</h5>
                 </b-card-text>
               </b-card-body>
             </b-col>
           </b-row>
         </b-card>
+
 
       </b-container>
   </div>
@@ -39,6 +39,6 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>
