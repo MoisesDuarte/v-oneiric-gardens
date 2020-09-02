@@ -24,7 +24,7 @@
 
       <div class="up-button my-4">
       <hr>
-        <button type="button" class="btn btn-outline-secondary"><b-icon icon="arrow-up" scale="1.5"></b-icon></button>
+        <button type="button" class="btn btn-outline-secondary" v-on:click="scrollUp"><b-icon icon="arrow-up" scale="1.5"></b-icon></button>
       <hr>
     </div>
 
@@ -33,7 +33,11 @@
 
 <script>
 export default {
-
+  methods: {
+    scrollUp() {
+      window.scrollTo(0, 0);
+    }
+  }
 }
 </script>
 
