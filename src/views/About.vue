@@ -33,10 +33,10 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .header {
   background-color: gray;
-  background-image: url('https://picsum.photos/1366/300/?image=33');
+  background-image: url('https://picsum.photos/1366/300/?image=3');
   background-repeat: no-repeat;
   background-size: cover;
   height: 18em;

@@ -1,8 +1,8 @@
 <template>
   <div id="home">
     <!-- Header Story -->
-    <section class="header p-5">
-        <b-card style="border: none; max-width: 30rem;" cols="4" class="m-4">
+    <b-container fluid class="header p-5">
+        <b-card style="border: none; max-width: 30rem;" class="m-5">
           <b-card-text>
             <p><small class="text-muted text-uppercase">{{stories[0].category}} | {{stories[0].date}}</small></p>
             <h2><strong>{{stories[0].title}}</strong></h2>
@@ -10,7 +10,7 @@
             <b-link to="stories/1" class="stretched-link"></b-link>
           </b-card-text>
         </b-card>
-    </section>
+    </b-container>
 
     <!-- Recent Stories -->
     <b-container>

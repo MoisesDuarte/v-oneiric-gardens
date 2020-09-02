@@ -80,7 +80,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .my-grid {
   display: grid;
   justify-items: center;
