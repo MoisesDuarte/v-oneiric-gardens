@@ -12,9 +12,9 @@
               <b-card-body>
                 <b-card-text>
                   <h2 class="text-uppercase">{{category.name}}</h2>
-                  <h4 class="text-muted">{{category.subtitle}}</h4>
+                  <h3 class="text-muted">{{category.subtitle}}</h3>
                   <hr>
-                  <h4>{{category.description}}</h4>
+                  <h5>{{category.description}}</h5>
                 </b-card-text>
               </b-card-body>
             </b-col>

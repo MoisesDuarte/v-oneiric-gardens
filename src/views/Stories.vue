@@ -2,6 +2,7 @@
   <div id="stories">
       <b-container>
         <h1 class="text-center font-weight-light my-5">All Stories</h1>
+        
         <div class="my-grid">
           <StoryCard v-for="story in stories" :key="story.id" :story="story" />
         </div>
@@ -9,8 +10,6 @@
          <div class="mt-3">
           <b-pagination v-model="currentPage" pills :total-rows="rows" size="lg" align="center"></b-pagination>
         </div>
-
-
     </b-container>
   </div>
 </template>
