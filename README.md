@@ -1,7 +1,7 @@
 # v-oneiric-gardens
 
 ## Description 
-Update of the HTML5 narrative blog template using Vue and BootstrapVue component library, based on a ui design made in whimsical.
+HTML5 narrative blog template using Vue and BootstrapVue component library, based on a UI design made in whimsical
 
 ## Project setup
 ```
