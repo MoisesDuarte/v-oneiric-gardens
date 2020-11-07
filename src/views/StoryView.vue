@@ -36,10 +36,13 @@ export default {
   methods: {
     scrollUp() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    },
+    initialScroll() {
+      window.scrollTo(0,0);
     }
   },
   mounted() {
-    this.scrollUp();
+    this.initialScroll();
   },
 }
 </script>
