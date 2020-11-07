@@ -61,6 +61,7 @@ export default {
 
 #content {
   font-size: 1.5em;
+  animation: slideInFromBottom 0.6s;
 }
 
 .up-button {

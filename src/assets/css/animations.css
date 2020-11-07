@@ -16,6 +16,17 @@
 }
 
 /* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+}
+
+
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
