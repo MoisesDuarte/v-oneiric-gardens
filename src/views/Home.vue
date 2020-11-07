@@ -13,7 +13,7 @@
     </b-container>
 
     <!-- Recent Stories -->
-    <b-container>
+    <b-container class="stories-container">
       <h1 class="text-center font-weight-light my-5">Recent Stories</h1>
       <b-card-group deck>
         <StoryCard v-for="story in stories" :key="story.id" :story="story"/>
@@ -93,6 +93,10 @@ export default {
   border: none;
   max-width: 30rem;
   animation: slideInFromLeft 1s;
+}
+
+.stories-container {
+  animation: slideInFromBottom 0.5s;
 }
 
 .plus-button {

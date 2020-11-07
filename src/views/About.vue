@@ -1,7 +1,7 @@
 <template>
   <div id="about">
       <b-container fluid class="header text-center">
-          <b-avatar class="my-5" size="20em"></b-avatar>
+        <b-avatar class="my-5" size="20em"></b-avatar>
       </b-container>
 
       <b-container class="m-from-header">
@@ -44,5 +44,6 @@ export default {
 
 .m-from-header {
   margin-top: 8em;
+  animation: slideInFromBottom 0.3s;
 }
 </style>
