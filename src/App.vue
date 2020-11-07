@@ -26,20 +26,4 @@ body {
   margin: 0;
   padding: 0;
 }
-
-.fade-enter {
-  opacity: 0;
-}
-
-.fade-enter-active {
-  transition: opacity 1s;
-}
-
-.fade-leave {
-  opacity: 0;
-}
-
-.fade-leave-active {
-  transition: opacity 1s;
-}
 </style>

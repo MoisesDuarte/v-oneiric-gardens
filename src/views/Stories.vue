@@ -1,7 +1,7 @@
 <template>
   <div id="stories">
       <b-container>
-        <h1 class="text-center font-weight-light my-5">All Stories</h1>
+        <h1 class="title text-center font-weight-light my-5">All Stories</h1>
         
         <div class="my-grid">
           <StoryCard v-for="story in stories" :key="story.id" :story="story" />
@@ -81,11 +81,16 @@ export default {
 </script>
 
 <style scoped>
+.title {
+  animation: slideInFromTop 1s;
+}
+
 .my-grid {
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-gap: 1.5rem;
+  animation: slideInFromBottom 0.5s;
 }
 
 .my-grid > * {

@@ -2,7 +2,7 @@
   <div id="home">
     <!-- Header Story -->
     <b-container fluid class="header p-5">
-        <b-card style="border: none; max-width: 30rem;" class="m-5">
+        <b-card class="header-card m-5">
           <b-card-text>
             <p><small class="text-muted text-uppercase">{{stories[0].category}} | {{stories[0].date}}</small></p>
             <h2><strong>{{stories[0].title}}</strong></h2>
@@ -87,6 +87,12 @@ export default {
   background-image: url('https://picsum.photos/1024/768/?image=24');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.header-card {
+  border: none;
+  max-width: 30rem;
+  animation: slideInFromLeft 1s;
 }
 
 .plus-button {

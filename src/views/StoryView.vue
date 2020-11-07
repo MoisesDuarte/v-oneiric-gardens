@@ -1,7 +1,7 @@
 <template>
   <div id="storyView">
       <b-container class="header p-5" fluid>
-        <b-card style="border: none; border-radius: 0; max-width: 30rem" class="mt-5 mx-auto">
+        <b-card class="header-card mt-5 mx-auto">
           <b-card-text>
             <small class="text-muted">CATEGORY | 2 DAYS AGO</small>
             <h2><strong>The horizon is consumed by flames.</strong></h2>
@@ -37,7 +37,10 @@ export default {
     scrollUp() {
       window.scrollTo(0, 0);
     }
-  }
+  },
+  mounted() {
+    this.scrollUp();
+  },
 }
 </script>
 
@@ -47,6 +50,13 @@ export default {
   background-image: url('https://picsum.photos/1366/400/?image=3');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.header-card {
+  border: none; 
+  border-radius: 0; 
+  max-width: 30rem;
+  animation: slideInFromLeft 1s;
 }
 
 #content {

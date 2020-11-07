@@ -1,8 +1,8 @@
 <template>
   <div id="categories">
       <b-container>
-        <h1 class="text-center font-weight-light my-5">All Categories</h1>
-        <b-card v-for="{ name, image, subtitle, description } in categories" :key="name" no-body class="overflow-hidden my-4">
+        <h1 class="title text-center font-weight-light my-5">All Categories</h1>
+        <b-card v-for="{ name, image, subtitle, description } in categories" :key="name" no-body class="category-card overflow-hidden my-4">
           <b-row no-gutters>
             <b-col md="3">
               <b-card-img-lazy blank="true" :src="image" alt="Image" class="rounded-0"></b-card-img-lazy>
@@ -38,5 +38,19 @@ export default {
 </script>
 
 <style scoped>
+.title {
+  animation: slideInFromTop 1s;
+}
 
+.category-card {
+  height: 16rem;
+}
+
+.category-card:nth-child(odd) {
+  animation: slideInFromRight 0.5s ease-in;
+}
+
+.category-card:nth-child(even) {
+  animation: slideInFromLeft 0.5s ease-in;
+}
 </style>
