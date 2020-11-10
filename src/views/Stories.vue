@@ -3,6 +3,10 @@
       <b-container>
         <h1 class="title text-center font-weight-light my-5">All Stories</h1>
         
+        <section class="mb-5">
+          <SearchForm />
+        </section>
+
         <div class="my-grid">
           <StoryCard v-for="story in stories" :key="story.id" :story="story" />
         </div>
@@ -15,12 +19,14 @@
 </template>
 
 <script>
+import SearchForm from '../components/SearchForm'
 import StoryCard from '../components/StoryCard'
 
 export default {
   name: 'stories',
   components: {
-    StoryCard
+    StoryCard,
+    SearchForm,
   },
   data() {
     return {
@@ -75,7 +81,7 @@ export default {
         },
       ],
       rows: 100,
-      currentPage: 1
+      currentPage: 1,
     }
   }
 }
