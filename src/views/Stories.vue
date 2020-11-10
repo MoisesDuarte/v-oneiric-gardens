@@ -3,7 +3,7 @@
       <b-container>
         <h1 class="title text-center font-weight-light my-5">All Stories</h1>
         
-        <section class="mb-5">
+        <section>
           <SearchForm />
         </section>
 
@@ -11,8 +11,8 @@
           <StoryCard v-for="story in stories" :key="story.id" :story="story" />
         </div>
 
-         <div class="mt-3">
-          <b-pagination v-model="currentPage" pills :total-rows="rows" size="lg" align="center"></b-pagination>
+         <div class="my-3">
+          <b-pagination v-model="currentPage" :total-rows="rows" size="lg" align="center"></b-pagination>
         </div>
     </b-container>
   </div>
