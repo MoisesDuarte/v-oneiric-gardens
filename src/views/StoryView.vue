@@ -33,6 +33,7 @@
 
 <script>
 export default {
+  name: 'story-view',
   methods: {
     scrollUp() {
       window.scrollTo({ top: 0, behavior: 'smooth' });

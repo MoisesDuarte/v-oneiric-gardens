@@ -18,6 +18,7 @@
 import StoryCard from '../components/StoryCard'
 
 export default {
+  name: 'stories',
   components: {
     StoryCard
   },

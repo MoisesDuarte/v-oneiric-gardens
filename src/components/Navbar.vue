@@ -3,7 +3,7 @@
   <b-navbar toggleable="lg" type="light" variant="light">
     <b-navbar-brand to="/">
         <img src="../assets/logo.svg" width="32px" class="align-top">
-        OneiricGardens
+        Oneiric<b>Gardens</b>
     </b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -21,7 +21,7 @@
 
 <script>
 export default {
-
+  name: 'navbar',
 }
 </script>
 

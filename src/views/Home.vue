@@ -64,20 +64,8 @@ export default {
           date: '4 Days Ago'
         },
       ],
-      lazyProps: {
-        blank: true,
-        blankColor: '#000',
-        width: 600,
-        height: 300
-      }
     }
   },
-  methods: {
-    getImageUrl(imageId) {
-      const { width, height } = this.lazyProps;
-      return `https://picsum.photos/${width}/${height}/?image=${imageId}`;
-    }
-  }
 }
 </script>
 

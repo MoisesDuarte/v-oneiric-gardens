@@ -12,6 +12,7 @@
 
 <script>
 export default {
+  name: 'story-card',
   props: {
     story: {
       id: Number,
